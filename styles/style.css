@@ -8,9 +8,7 @@ a{
     text-decoration: none;
     color: white;
 }
-a:hover{
-    text-decoration: underline;
-}
+
 
 /* texts */
 .big-title{
@@ -53,6 +51,9 @@ a:hover{
     font-weight: 600;
 }
 .btn-primary{
+    max-width: fit-content;
+    min-width: 100px;
+    text-align: center;
     font-size: 18px;
     font-weight: 600;
     padding: 16px 40px;
@@ -80,6 +81,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+}
+nav a:hover{
+    text-decoration: underline;
 }
 .brand{
     font-size: 36px;
@@ -201,4 +205,27 @@ nav{
 }
 .habit-card img{
     clip-path: circle(50%);
+}
+
+/* run */
+
+#run{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(80vw - 20px);
+    background: #222222;
+    padding: 30px;
+    border-radius: 18px;
+    margin: auto auto 50px;
+    gap: 30px;
+}
+.run-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#run img{
+    width: 30%;
+    border-radius: 18px;
 }
