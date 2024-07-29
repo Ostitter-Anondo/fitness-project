@@ -1,0 +1,126 @@
+/* unique task thing */
+.unique{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+}
+#matha{
+    height: 90px;
+    width: 70px;
+    border-radius: 40% 40% 60% 60%;
+    background-color: wheat;
+}
+.torso{
+    display: flex;
+}
+.hath{
+    height: 200px;
+    width: 40px;
+    border-radius: 40% 40% 30% 30%;
+    background-color: wheat;
+    position: relative;
+}
+#haath-a{
+    left: 40px;
+    transform: rotate(20deg);
+    transform-origin: top;
+    transition: transform 0.5s ease-in, height 0s ease 0.6s, width 1.5s ease 0.6s;
+}
+#haath-c{
+    height: 100px;
+    left: -20px;
+    transform: rotate(90deg);
+    transform-origin: top;
+    visibility: hidden;
+    transition: visibility 0s ease 0.6s, transform 1s ease-out 0.6s;
+}
+#haath-b{
+    left: -40px;
+    transform: rotate(-20deg);
+    transform-origin: top;
+    transition: transform 0.5s ease-in, height 0s ease 0.6s, width 1.5s ease 0.6s;
+}
+#haath-d{
+    height: 100px;
+    left: 20px;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    visibility: hidden;
+    transition: visibility 0s ease 0.6s, transform 1s ease-out 0.6s;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buk{
+    height: 100px;
+    width: 100px;
+    border-radius: 10% 10% 30% 30%;
+    background-color: wheat;
+    transition: width 2s ease-in;
+}
+#bhuri{
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 50% 50%;
+    background-color: wheat;
+    position: relative;
+    bottom: 20px;
+    transition: width 1.5s ease-in, border-radius 2s ease;
+}
+#pant{
+    width: 140px;
+    height: 70px;
+    background-color: red;
+    border-radius: 3% 3% 30% 30%;
+    position: relative;
+    bottom: 65px;
+    transition: width 1.5s ease-in, border-radius 2s ease;
+}
+.pao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pa{
+    height: 200px;
+    width: 40px;
+    border-radius: 0% 00% 30% 30%;
+    background-color: wheat;
+    position: relative;
+    bottom: 70px;
+}
+
+
+.unique:hover #buk{
+    width: 150px;
+}
+.unique:hover #haath-a{
+    transform: rotate(90deg);
+    height: 100px;
+    width: 55px;
+}
+.unique:hover #haath-b{
+    transform: rotate(-90deg);
+    height: 100px;
+    width: 55px;
+}
+.unique:hover #haath-c{
+    visibility: visible;
+    transform: rotate(180deg);
+}
+.unique:hover #haath-d{
+    visibility: visible;
+    transform: rotate(-180deg);
+}
+
+.unique:hover #bhuri{
+    width: 100px;
+    border-radius: 20%;
+}
+.unique:hover #pant{
+    width: 100px;
+    border-radius: 2%;
+}
