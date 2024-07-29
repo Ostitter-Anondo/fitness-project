@@ -42,6 +42,11 @@ a{
     font-size: 13px;
     font-weight: 400;
 }
+.text-desc-d{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
 
 /* buttons */
 .btn-mini{
@@ -108,6 +113,11 @@ nav a:hover{
 }
 .banner-txts-btns{
     width: 60%;
+
+}
+.head-btns{
+    display: flex;
+    gap: 20px;
 }
 .head-txt-block{
     margin: 0px auto 50px;
@@ -116,13 +126,10 @@ nav a:hover{
 .banner-img{
     position: relative;
 }
-.glassbox{
-    background-color: rgba(48, 48, 48, 0.54);
-    padding: 20px;
-    position: absolute;
-}
+
 #box-a{
-    background: rgba(255, 255, 255, 0.95), blur(30%);
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
     border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 15px 20px;
@@ -140,7 +147,8 @@ nav a:hover{
 }
 
 #box-b{
-    background: rgba(255, 255, 255, 0.95), blur(30%);
+    background: rgba(57, 57, 57, 0.3);
+    backdrop-filter: blur(20px);
     border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 15px 20px;
@@ -213,7 +221,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(80vw - 20px);
+    width: calc(80vw - 30px);
     background: #222222;
     padding: 30px;
     border-radius: 18px;
@@ -228,4 +236,82 @@ nav a:hover{
 #run img{
     width: 30%;
     border-radius: 18px;
+}
+
+/* excercises section */
+
+#exercises{
+    max-width: 80vw;
+    margin: 100px auto 50px;
+}
+.exc-imgs{
+    display: grid;
+    width: 100%;
+    height: 403px;
+    grid-template-rows: 1fr 1fr;
+}
+#exc-a{
+    display: grid;
+    grid-template-columns: 5fr 10fr 6fr;
+}
+#exc-b{
+    display: grid;
+    grid-template-columns: 8fr 6fr 7fr;
+}
+#cyan{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    padding: 0px 20px;
+    background: url("../images/exercise1.jpg"), #06ffd180;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#cyan p{
+    color: black;
+}
+#red{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 20px;
+    background: url("../images/exercise2.png"), #ff00004d;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#gray{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px 20px;
+    background: url("../images/exercise3.png"), #00000080;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#black{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 20px;
+    background: url("../images/exercise4.png"), #00000080;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#green{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px 20px;
+    background: url("../images/exercise5.jpg"), #42ff004d;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+#blue{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0px 20px;
+    background: url("../images/exercise6.jpg"), #0047ff4d;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
