@@ -22,6 +22,11 @@ a{
     font-weight: 900;
     margin: 0px;
 }
+.sub-sec-title{
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0px;
+}
 .card-title{
     font-size: 18px;
     font-weight: 600;
@@ -232,9 +237,14 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 60%;
 }
-#run img{
+#run-img{
     width: 30%;
+    height: 200px;
+    background: url("../images/run.jpg");
+    background-size: 270%;
+    background-position: 70% 30%;
     border-radius: 18px;
 }
 
@@ -243,6 +253,9 @@ nav a:hover{
 #exercises{
     max-width: 80vw;
     margin: 100px auto 50px;
+}
+.exc-txt{
+    margin: auto auto 50px;
 }
 .exc-imgs{
     display: grid;
@@ -314,4 +327,48 @@ nav a:hover{
     background: url("../images/exercise6.jpg"), #0047ff4d;
     background-blend-mode: multiply;
     background-size: cover;
+}
+
+/* bmi calculator */
+
+/* chart */
+.calculator-area{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding: 50px 0;
+}
+.bmi-txts{
+    max-width: fit-content;
+    margin: 0 auto 70px;
+}
+#bmi-calc table{
+    border-collapse: collapse;
+}
+#bmi-calc th, #bmi-calc td{
+    border: 1px solid #ffffff1a;
+    padding: 14px;
+    text-align: left;
+}
+#bmi-calc td{
+    color: #ffffff80;
+}
+
+/* calculator */
+#calculator-thing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+#activity-fact{
+    grid-column: span 2;
+}
+.inp-a{
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
 }

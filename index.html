@@ -53,7 +53,7 @@
         <section id="habit">
             <div class="habit-title">
                 <h3 class="inter sec-title">Change your Habits</h3>
-                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
             </div>
             <div class="habits">
                 <div class="habit-card">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="habit-card">
                     <img src="images/image 5.png" alt="">
-                    <h5 class="card-title inter">Wheightloss</h5>
+                    <h5 class="card-title inter">Weight Loss</h5>
                     <p class="text-desc-b inter">We believe fitness should be accessible to everyone</p>
                 </div>
             </div>
@@ -81,15 +81,17 @@
         <section id="run">
             <div class="run-txt">
                 <h3 class="sec-title inter">Run an Extra Mile</h3>
-                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym. With hundreds of professional workouts.</p>
                 <a href="" class="btn-primary inter">Join Now</a>
             </div>
-            <img src="images/run.jpg" alt="">
+            <div id="run-img">
+                <p>        </p>
+            </div>
         </section>
         <section id="exercises">
             <div class="exc-txt">
                 <h3 class="sec-title inter">Trainings and Exercises</h3>
-                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
             </div>
             <div class="exc-imgs">
                 <div id="exc-a">
@@ -101,6 +103,68 @@
                     <div id="black"><p class="text-desc-d inter">Leg Press: Works the <br>quadriceps and glutes</p></div>
                     <div id="green"><p class="text-desc-d inter">Leg Press: Works the <br>quadriceps and glutes</p></div>
                     <div id="blue"><p class="text-desc-d inter">Leg Press: Works the <br>quadriceps and glutes</p></div>
+                </div>
+            </div>
+        </section>
+        <section id="bmi-calc">
+            <div class="bmi-txts">
+                <h3 class="sec-title inter">
+                    BMI Calculator
+                </h3>
+                <p class="text-desc-b inter">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>access to a gym.</p>
+            </div>
+            <div class="calculator-area">
+                <div class="chart">
+                    <h4 class="sub-sec-title inter" style="margin-bottom: 50px;">
+                        BMI Calculator Chart
+                    </h4>
+                    <table class="inter">
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calc">
+                    <h4 class="sub-sec-title inter" style="margin-bottom: 10px;">
+                        Calculate your BMI
+                    </h4>
+                    <p class="text-desc-b inter" style="margin-bottom: 50px;">We believe fitness should be accessible to everyone, everywhere, regardless of <br>income or access to a gym.</p>
+                    <form action="" id="calculator-thing">
+                        <input type="number" id="height" class="inp-a" placeholder="Height/cm">
+                        <input type="number" id="weight" class="inp-a" placeholder="Weight/kg">
+                        <input type="number" id="age" class="inp-a" placeholder="Age">
+                        <select name="sex" id="sex" class="inp-a">
+                            <option disabled selected>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="apache">Attack Helicopter</option>
+                        </select>
+                        <select name="activity" id="activity-fact" class="inp-a" style="margin-bottom: 30px;">
+                            <option disabled selected>Select an activity factor</option>
+                            <option value="one">One thing</option>
+                            <option value="idk">I don't know why</option>
+                            <option value="dem">It doesn't even matter</option>
+                            <option value="hard">How hard you try</option>
+                        </select>
+                        <input type="submit" value="Calculate" class="btn-primary" style="color: white; border: none;">
+                    </form>
                 </div>
             </div>
         </section>
