@@ -338,6 +338,7 @@ nav a:hover{
     justify-content: center;
     gap: 10vw;
     padding: 50px 0;
+    margin-bottom: 50px;
 }
 .bmi-txts{
     max-width: fit-content;
@@ -371,4 +372,39 @@ nav a:hover{
     font-size: 16px;
     padding: 12px 20px;
     border-radius: 8px;
+}
+
+/* meet our team */
+#team-intro{
+    margin-top: 50px;
+}
+.team-pics{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    max-width: 80vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px auto;
+    border-radius: 18px;
+    background-color: #ffffff1a;
+}
+.trainer{
+    width: 32%;
+    border-radius: 18px;
+    background-blend-mode: multiply;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.trainer h4, .trainer p{
+    margin: 3px 20px;
+}
+.trainer p{
+    margin-bottom: 20px;
+}
+.trainer-name{
+    font-size: 20px;
+    font-weight: 900;
 }
