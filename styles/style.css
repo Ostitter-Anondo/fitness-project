@@ -93,6 +93,7 @@ header{
 }
 /* Navbar */
 nav{
+    position: relative;
     display: flex;
     width: 80vw;
     margin: auto;
@@ -100,19 +101,38 @@ nav{
     align-items: center;
     font-size: 18px;
 }
+#hamburger{
+    display: none;
+
+}
+.hamburg{
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 2px 0px;
+}
 .brand{
     font-size: 36px;
     color: #e6533c;
 }
+.nav-line{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 .nav-btns{
     display: flex;
-    width: 35%;
+    list-style-type: none;
+    gap: 20px;
+    /* width: 35%; */
     justify-content: space-between;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 4px;
-    padding-right: 20px;
-    border-radius: 39px;
+    padding: 12px 5px;
+    padding-right: 15px;
+    border-radius: 50px;
 }
 
 /* banner */
@@ -482,8 +502,19 @@ footer{
         font-size: 32px;
     }
 
+    #hamburger{
+        display: grid;
+    }
     .nav-btns{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -20px;
+        top: 80px;
+        padding: 20px 0px;
+    }
+    #hamburger:hover > .nav-btns{
+        display: flex;
     }
     .btn-primary{
         width: fit-content;
