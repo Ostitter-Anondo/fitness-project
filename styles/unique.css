@@ -124,3 +124,10 @@
     width: 100px;
     border-radius: 2%;
 }
+
+
+@media screen and (max-width: 576px) {
+    .unique{
+        scale: 0.7;
+    }
+}

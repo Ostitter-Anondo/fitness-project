@@ -438,7 +438,43 @@ footer{
     max-width: 80vw;
     margin: 30px auto;
 }
+.team-txt{
+    max-width: 80vw;
+    margin: auto;
+}
 
+/* tablet responsive */
+@media screen and (max-width: 992px) and (min-width: 576px){
+    #banner{
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+    }
+    .banner-txts-btns{
+        width: 90%;
+    }
+    #box-a{
+        right: -20px;
+        top: 70px;
+    }
+
+    .habits{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+    }
+    .habit-card{
+        max-width: 40%;
+    }
+
+    .bmi-txts{
+        margin: 0 10vw 70px;
+    }
+    .calculator-area{
+        flex-direction: column;
+        padding: 10vw;
+    }
+}
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
@@ -466,6 +502,9 @@ footer{
     }
     .cursive{
         font-size:  42px;
+    }
+    .head-btns{
+        flex-direction: column;
     }
 
     #box-a{
