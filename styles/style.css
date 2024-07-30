@@ -489,6 +489,9 @@ footer{
         width: fit-content;
         min-width: none;
     }
+    .banner-img img{
+        max-width: 80vw;
+    }
     
     #banner{
         flex-direction: column;
@@ -508,8 +511,15 @@ footer{
     }
 
     #box-a{
-        right: -30px;
+        right: -20px;
         top: 70px;
+        padding: 10px;
+    }
+    #box-a h3{
+        font-size: 28px;
+    }
+    #box-a p{
+        font-size: 12px;
     }
     #box-b{
         left: -20px;
