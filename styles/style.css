@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color: white;
 }
+nav a:hover{
+    text-decoration: underline;
+}
 
 
 /* texts */
@@ -16,6 +19,9 @@ a{
     font-weight: 900;
     margin-bottom: 0px;
     line-height: 0.9;
+}
+.cursive{
+    font-size: 156px;
 }
 .sec-title{
     font-size: 48px;
@@ -59,6 +65,7 @@ a{
     padding: 8px 20px;
     border-radius: 46px;
     font-weight: 600;
+    text-decoration: none;
 }
 .btn-primary{
     max-width: fit-content;
@@ -73,6 +80,7 @@ a{
 .btn-secondary{
     font-size: 18px;
     font-weight: 600;
+    text-align: center;
     padding: 16px 40px;
     border: 1px solid white;
     border-radius: 42px;
@@ -91,9 +99,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-}
-nav a:hover{
-    text-decoration: underline;
 }
 .brand{
     font-size: 36px;
@@ -359,7 +364,7 @@ nav a:hover{
 /* calculator */
 #calculator-thing{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 10px;
 }
 #activity-fact{
@@ -432,4 +437,105 @@ footer{
     justify-content: space-between;
     max-width: 80vw;
     margin: 30px auto;
+}
+
+
+/* mobile responsive */
+@media screen and (max-width: 576px) {
+    .sec-title{
+        font-size: 32px;
+    }
+
+    .nav-btns{
+        display: none;
+    }
+    .btn-primary{
+        width: fit-content;
+        min-width: none;
+    }
+    
+    #banner{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .banner-txts-btns{
+        width: 70%;
+    }
+    .big-title{
+        font-size: 36px;
+    }
+    .cursive{
+        font-size:  42px;
+    }
+
+    #box-a{
+        right: -30px;
+        top: 70px;
+    }
+    #box-b{
+        left: -20px;
+        bottom: 120px;
+    }
+
+    #habit{
+        margin: 0px auto 50px;
+    }
+    .habit-title{
+        width: 100%;
+    }
+    .habits{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    #run{
+        flex-direction: column;
+    }
+    #run div{
+        max-width: none;
+        width: 100%;
+    }
+    #run .btn-primary{
+        width: unset;
+        max-width: none;
+    }
+
+    .exc-imgs{
+        height: 255px;
+    }
+    #gray, #blue{
+        display: none;
+    }
+    #red{
+        background-position: right;
+    }
+    #exc-a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #exc-b{
+        display: grid;
+        grid-template-columns: 7fr 8fr;
+    }
+
+    .bmi-txts{
+        margin: 0 10vw 70px;
+    }
+    .calculator-area{
+        flex-direction: column;
+        padding: 10vw;
+    }
+
+    .team-pics{
+        flex-direction: column;
+    }
+    .trainer{
+        width: auto;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
 }
