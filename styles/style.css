@@ -11,7 +11,9 @@ a{
 nav a:hover{
     text-decoration: underline;
 }
-
+input[type='checkbox']{
+    display: none;
+}
 
 /* texts */
 .big-title{
@@ -501,20 +503,21 @@ footer{
     .sec-title{
         font-size: 32px;
     }
-
     #hamburger{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    input[type='checkbox']:not(:checked)+ul {
+        display: none;
     }
     .nav-btns{
-        display: none;
         flex-direction: column;
         position: absolute;
-        right: -20px;
-        top: 80px;
-        padding: 20px 0px;
-    }
-    #hamburger:hover > .nav-btns{
-        display: flex;
+        right: -25px;
+        bottom: -150px;
+        padding: 20px 10px;
+        border-radius: 5%;
+        background-color: rgba(0, 0, 0, 0.346);
     }
     .btn-primary{
         width: fit-content;
